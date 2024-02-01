@@ -1,0 +1,75 @@
+.about {
+    padding-top: 120px;
+    position: relative;
+    min-height: 840px;
+    &__photo-filter {
+        background-color: rgba(0,0,0,.15);
+        background-blend-mode: multiply;
+    }
+    &__subtitle {
+        z-index: 2;
+        position: relative;
+        margin-left: 10px;
+        @include before_circle;
+        &_small {
+            z-index: 2;
+            position: relative;
+            @include before_circle_shifted;
+        }
+    }
+    &__title {
+        margin-top: 10px;
+    }
+    &__divider {
+        width: 60px;
+        height: 3px;
+        background-color:$main-color;
+        margin-bottom: 20px;
+    }
+    &__descr {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+    &__skills {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 50px;
+        
+    }
+    &__skill {
+        display: flex;
+        position: relative;
+        width: 46%;
+        padding-left: 60px;
+        &-descr {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        &_img {
+            position: absolute;
+            z-index: 3;
+            top: 10px;
+            left: 18px;
+      
+        }
+    }
+}
+
+#photo {grid-area: photo;}
+#main_information {grid-area: main_information;}
+#skills {grid-area: skills;}
+
+.grid-container {
+    display: grid;
+    grid-template: minmax(240px, auto) 1fr/ 400px 1fr;
+    gap: 40px 70px;
+    grid-template-areas: 
+    'photo main_information'
+    'photo skills';
+}

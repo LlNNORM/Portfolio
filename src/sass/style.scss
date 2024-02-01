@@ -15,7 +15,10 @@
     margin: 0 auto;
 }
 
+@import 'blocks/layers';
 @import 'blocks/promo';
 @import 'blocks/title';
 @import 'blocks/button';
 @import 'blocks/sidepanel';
+@import 'blocks/menu';
+@import 'blocks/about';
