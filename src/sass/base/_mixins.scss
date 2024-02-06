@@ -12,17 +12,3 @@
     }
     
 }
-
-@mixin before_circle_shifted {
-    &:before {
-        content: '';
-        position: absolute;
-        width: 36px;
-        height: 36px; 
-        background: $main-color;
-        z-index: -1;
-        top: -25%;
-        left: -58px;
-        border-radius: 100%;
-    }
-}
