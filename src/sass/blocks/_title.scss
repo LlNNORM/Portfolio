@@ -35,8 +35,7 @@
 }
 
 .subtitle {
-    margin-top: 10px;
-        @include before_circle;
+    margin-top: 5px;
     &_center {
         text-align: center;
     }
